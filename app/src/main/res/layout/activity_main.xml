@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8E6C9"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:enabled="true"
+        android:hint="Flower name"
+        android:inputType="textCapWords"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:minHeight="48dp"
+        android:nextFocusDown="@id/quantity"
+        android:textSize="12dp" />
+
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="2dp"
+        android:enabled="true"
+        android:hint="Quantity"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:nextFocusDown="@id/flowertype"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/flowertype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_marginTop="2dp"
+        android:hint="Flower Type"
+        android:inputType="textCapWords"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:minHeight="48dp"
+        android:nextFocusDown="@id/color"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flowertype"
+        android:layout_marginTop="2dp"
+        android:hint="Color"
+        android:inputType="textCapWords"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:minHeight="48dp"
+        android:nextFocusDown="@id/price"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color"
+        android:layout_marginTop="2dp"
+        android:hint="Price"
+        android:digits="0123456789.,"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="2dp"
+        android:background="#2E7D32"
+        android:backgroundTint="#D84315"
+        android:text="Insert"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="2dp"
+        android:text="Update"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="2dp"
+        android:text="Delete"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="2dp"
+        android:text="View All Data"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnView"
+        android:layout_marginTop="2dp"
+        android:hint="Search flower name"
+        android:inputType="textCapWords"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+        android:minHeight="48dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="2dp"
+        android:text="View Data"
+        android:textSize="12dp" />
+
+
+</RelativeLayout>
